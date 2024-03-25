@@ -4,7 +4,7 @@ from aggregate_result import aggregate_result
 import json
 
 if __name__ == "__main__":
-    PATH = "main/predictions/predictions.json"
+    PATH = "src/main/predictions/predictions.json"
     data = load_data()
     prediction = load_model().predict(data[COLUMNS_CHECK])
     final_df = aggregate_result(data, prediction)

@@ -8,7 +8,7 @@ For the prediction to be possible, we need 3 keys: total_impressions, viewable_i
 ## Output
 The output will be saved in a json on a folder called predictions and the file will be called predictions.json with will contain all the record + the total_revenue prediction per record
 ## Running local
-To run the prediction, just clone this repo, go to src folder and type python3 main
+To run the prediction, just clone this repo, go to root project folder and type python3 src/main
 ## Running docker
 To run the prediction, just build and image and run or pull image from [Docker hub](https://hub.docker.com/r/andonokar/task2).
 To pull the image:

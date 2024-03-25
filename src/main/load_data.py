@@ -11,7 +11,7 @@ def load_data() -> pd.DataFrame:
     dataframe must have all the 3 README columns, otherwise will raise an error
     :return: a pandas dataframe with json_data
     """
-    json_path = os.environ.get("DATA_PATH", f"main/resources/AD-Tech.json")
+    json_path = os.environ.get("DATA_PATH", f"src/main/resources/AD-Tech.json")
     if not json_path.endswith(".json"):
         raise NotImplementedError("File must be an json format")
     df_json = pd.read_json(json_path, orient="records")
